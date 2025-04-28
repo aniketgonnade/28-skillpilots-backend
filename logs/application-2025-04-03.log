@@ -1,0 +1,669 @@
+2025-04-03 11:31:55 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-03 11:31:55 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 11:31:55 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 11:31:56 INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\panka\.m2\repository\io\grpc\grpc-netty-shaded\1.38.0\grpc-netty-shaded-1.38.0.jar referenced one or more files that do not exist: file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/grpc-core-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/grpc-api-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/gson-2.8.6.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/annotations-4.1.1.4.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/animal-sniffer-annotations-1.19.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/error_prone_annotations-2.4.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/guava-30.1-android.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/perfmark-api-0.23.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/jsr305-3.0.2.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/grpc-context-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/failureaccess-1.0.1.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/checker-compat-qual-2.5.5.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-netty-shaded/1.38.0/j2objc-annotations-1.3.jar
+2025-04-03 11:31:56 INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\panka\.m2\repository\io\grpc\grpc-alts\1.38.0\grpc-alts-1.38.0.jar referenced one or more files that do not exist: file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-auth-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-grpclb-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-protobuf-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-stub-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/protobuf-java-util-3.12.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/protobuf-java-3.12.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/conscrypt-openjdk-uber-2.5.1.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/google-auth-library-oauth2-http-0.22.2.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-netty-shaded-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-core-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-protobuf-lite-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-api-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/guava-30.1-android.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/error_prone_annotations-2.4.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/google-auth-library-credentials-0.22.2.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/animal-sniffer-annotations-1.19.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/google-http-client-jackson2-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/google-http-client-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/jsr305-3.0.2.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/grpc-context-1.38.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/opencensus-api-0.28.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/proto-google-common-protos-2.0.1.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/auto-value-annotations-1.7.4.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/failureaccess-1.0.1.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/checker-compat-qual-2.5.5.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/j2objc-annotations-1.3.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/gson-2.8.6.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/annotations-4.1.1.4.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/perfmark-api-0.23.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/httpclient-4.5.13.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/httpcore-4.4.13.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/opencensus-contrib-http-util-0.24.0.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/jackson-core-2.11.3.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/commons-logging-1.2.jar,file:/C:/Users/panka/.m2/repository/io/grpc/grpc-alts/1.38.0/commons-codec-1.11.jar
+2025-04-03 11:31:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-03 11:31:56 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-03 11:32:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 11:32:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1000 ms. Found 55 JPA repository interfaces.
+2025-04-03 11:32:07 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 11:32:07 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 11:32:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+2025-04-03 11:32:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2025-04-03 11:32:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 11:32:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 11:32:12 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 11:32:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16269 ms
+2025-04-03 11:32:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 11:32:15 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03 11:32:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 11:32:18 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 11:32:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-03 11:32:20 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5571b3a0
+2025-04-03 11:32:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-03 11:32:20 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 11:32:20 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 11:32:28 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 11:32:28 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 11:32:28 DEBUG org.hibernate.SQL - 
+    alter table assessment_test 
+       modify column status bit not null
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column creation_date datetime(6)
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column effective_date datetime(6)
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column expiration_date datetime(6)
+2025-04-03 11:32:29 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column updation_date datetime(6)
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table trainee_student_material 
+       modify column college_id bigint
+2025-04-03 11:32:30 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 11:32:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 11:32:34 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-03 11:32:40 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 11:32:40 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 11:32:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 11:32:43 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@450eb040, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4955009c, org.springframework.security.web.context.SecurityContextHolderFilter@172ccf2e, org.springframework.security.web.header.HeaderWriterFilter@69c206d7, org.springframework.web.filter.CorsFilter@6a38f298, org.springframework.security.web.authentication.logout.LogoutFilter@2e3b8d30, com.skilladmin.config.Jwtvalidator@2a293aa2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38d2f92, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5053a42f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@490df523, org.springframework.security.web.session.SessionManagementFilter@5443e7bc, org.springframework.security.web.access.ExceptionTranslationFilter@2c2131ec, org.springframework.security.web.access.intercept.AuthorizationFilter@57ab7f92]
+2025-04-03 11:32:44 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-04-03 11:32:44 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2025-04-03 11:32:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/newskill'
+2025-04-03 11:32:45 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 51.585 seconds (process running for 54.261)
+2025-04-03 14:04:03 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m9s668ms201µs700ns).
+2025-04-03 14:08:46 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s702ms216µs600ns).
+2025-04-03 14:15:31 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 294 class path changes (0 additions, 294 deletions, 0 modifications)
+2025-04-03 14:15:32 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:15:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:15:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-03 14:15:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-03 14:15:41 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:15:41 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:15:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:15:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2025-04-03 14:15:51 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:15:51 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:15:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+2025-04-03 14:15:52 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:15:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 14:15:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 14:15:53 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 14:15:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12082 ms
+2025-04-03 14:15:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:15:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:15:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:15:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-04-03 14:15:55 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c005f6f
+2025-04-03 14:15:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-04-03 14:15:55 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:15:55 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:15:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:15:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:15:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:16:03 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 48d7b8a3-4b6f-4aa9-afb0-2923ab353755
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-04-03 14:16:03 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-03 14:16:03 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@250ef593, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d12a98c, org.springframework.security.web.context.SecurityContextHolderFilter@78dcfc4f, org.springframework.security.web.header.HeaderWriterFilter@60203108, org.springframework.web.filter.CorsFilter@76d10988, org.springframework.security.web.csrf.CsrfFilter@56a46433, org.springframework.security.web.authentication.logout.LogoutFilter@4d7fe0db, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@736878ed, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@703fcb61, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5872be61, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46ed0c07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@dac8a9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11f61026, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a027a91, org.springframework.security.web.access.ExceptionTranslationFilter@7fec6545, org.springframework.security.web.access.intercept.AuthorizationFilter@41a3213a]
+2025-04-03 14:16:03 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-03 14:16:03 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:16:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/newskill'
+2025-04-03 14:16:04 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 27.104 seconds (process running for 9853.347)
+2025-04-03 14:16:04 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-04-03 14:16:08 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 293 class path changes (293 additions, 0 deletions, 0 modifications)
+2025-04-03 14:16:08 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:16:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:16:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-04-03 14:16:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-04-03 14:16:10 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:16:10 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:16:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:16:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1498 ms. Found 55 JPA repository interfaces.
+2025-04-03 14:16:16 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:16:16 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:16:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+2025-04-03 14:16:16 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:16:16 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 14:16:16 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 14:16:17 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 14:16:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6811 ms
+2025-04-03 14:16:18 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:16:18 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:16:18 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:16:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-04-03 14:16:19 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78fafcfc
+2025-04-03 14:16:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-04-03 14:16:19 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:16:19 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:16:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:16:27 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 14:16:27 DEBUG org.hibernate.SQL - 
+    alter table assessment_test 
+       modify column status bit not null
+2025-04-03 14:16:27 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 14:16:28 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 14:16:28 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 14:16:28 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 14:16:29 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column creation_date datetime(6)
+2025-04-03 14:16:29 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column effective_date datetime(6)
+2025-04-03 14:16:30 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column expiration_date datetime(6)
+2025-04-03 14:16:30 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column updation_date datetime(6)
+2025-04-03 14:16:30 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 14:16:31 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 14:16:31 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 14:16:31 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 14:16:32 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 14:16:32 DEBUG org.hibernate.SQL - 
+    alter table trainee_student_material 
+       modify column college_id bigint
+2025-04-03 14:16:32 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 14:16:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:17:13 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 14:17:13 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 14:17:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:17:39 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@19f2ebab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2791c107, org.springframework.security.web.context.SecurityContextHolderFilter@76319ddc, org.springframework.security.web.header.HeaderWriterFilter@2569236b, org.springframework.web.filter.CorsFilter@5955f407, org.springframework.security.web.authentication.logout.LogoutFilter@6c7a44e6, com.skilladmin.config.Jwtvalidator@5c8882da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50c91149, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c570240, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2990b8f0, org.springframework.security.web.session.SessionManagementFilter@5d7eeb85, org.springframework.security.web.access.ExceptionTranslationFilter@737aa48f, org.springframework.security.web.access.intercept.AuthorizationFilter@70600aaf]
+2025-04-03 14:17:49 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-03 14:17:50 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:17:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/newskill'
+2025-04-03 14:17:50 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 100.164 seconds (process running for 9959.138)
+2025-04-03 14:17:50 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found beans of type 'org.springframework.security.authentication.AuthenticationManager' authenticationManager and found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' trainingUserSerImpl, userServiceImpl and found beans of type 'org.springframework.security.authentication.AuthenticationProvider' authenticationProvider (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+         - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-04-03 14:17:57 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 281 class path changes (2 additions, 1 deletion, 278 modifications)
+2025-04-03 14:17:57 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:17:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:17:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-04-03 14:18:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-04-03 14:18:05 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:18:05 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:18:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:18:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4774 ms. Found 55 JPA repository interfaces.
+2025-04-03 14:18:40 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:18:40 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:18:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8000 (http)
+2025-04-03 14:18:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:18:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 14:18:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 14:18:42 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 14:18:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 37214 ms
+2025-04-03 14:18:43 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:18:43 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:18:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:18:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-04-03 14:18:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55e91950
+2025-04-03 14:18:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-04-03 14:18:47 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:18:47 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:18:59 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:19:00 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 14:19:01 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 14:19:01 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 14:19:01 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 14:19:02 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 14:19:02 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 14:19:02 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 14:19:03 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 14:19:03 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 14:19:03 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 14:19:04 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 14:19:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:19:17 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 14:19:17 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 14:19:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:19:23 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3da30d7c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6840cfaa, org.springframework.security.web.context.SecurityContextHolderFilter@141f8990, org.springframework.security.web.header.HeaderWriterFilter@7c886d7f, org.springframework.web.filter.CorsFilter@18016e4d, org.springframework.security.web.authentication.logout.LogoutFilter@6ea7b91, com.skilladmin.config.Jwtvalidator@7c3046f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e9514ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11c967d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ade8dfc, org.springframework.security.web.session.SessionManagementFilter@43578617, org.springframework.security.web.access.ExceptionTranslationFilter@4e4e9fd6, org.springframework.security.web.access.intercept.AuthorizationFilter@5a731dcc]
+2025-04-03 14:19:24 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-03 14:19:24 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:19:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8000 (http) with context path '/newskill'
+2025-04-03 14:19:24 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 81.302 seconds (process running for 10053.557)
+2025-04-03 14:19:24 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-03 14:19:26 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 281 class path changes (1 addition, 2 deletions, 278 modifications)
+2025-04-03 14:19:26 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+2025-04-03 14:19:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:19:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-04-03 14:19:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-04-03 14:19:28 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:19:28 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:19:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:19:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1482 ms. Found 55 JPA repository interfaces.
+2025-04-03 14:19:32 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-04-03 14:19:32 WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/panka/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/panka/.m2/repository/org/json/json/20090211/json-20090211.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2025-04-03 14:19:33 INFO  com.skilladmin.DemoApplicationTests - Starting DemoApplicationTests using Java 17.0.1 with PID 18140 (started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:19:33 INFO  com.skilladmin.DemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:19:33 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:19:33 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:19:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-04-03 14:19:34 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:19:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 14:19:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 14:19:34 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 14:19:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6023 ms
+2025-04-03 14:19:34 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:19:34 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:19:35 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:19:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-04-03 14:19:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36e12dcf
+2025-04-03 14:19:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-04-03 14:19:37 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:19:37 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:19:38 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:19:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2371 ms. Found 55 JPA repository interfaces.
+2025-04-03 14:19:42 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:19:42 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:19:43 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:19:44 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-04-03 14:19:44 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:19:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:19:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-03 14:19:49 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d40f597
+2025-04-03 14:19:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-03 14:19:50 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:19:50 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:19:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:19:57 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table assessment_test 
+       modify column status bit not null
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column creation_date datetime(6)
+2025-04-03 14:19:58 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column effective_date datetime(6)
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column expiration_date datetime(6)
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table packages_data 
+       modify column updation_date datetime(6)
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table trainee_student_material 
+       modify column college_id bigint
+2025-04-03 14:19:59 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 14:20:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:20:01 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 14:20:02 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 14:20:03 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 14:20:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:20:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:20:06 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-03 14:20:10 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 14:20:10 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 14:20:12 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 14:20:12 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 14:20:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:20:17 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:20:17 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7daef383, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@94d392f, org.springframework.security.web.context.SecurityContextHolderFilter@4fb5b572, org.springframework.security.web.header.HeaderWriterFilter@7bde835d, org.springframework.web.filter.CorsFilter@1ff51a54, org.springframework.security.web.authentication.logout.LogoutFilter@58459a5b, com.skilladmin.config.Jwtvalidator@6599946b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@774fd964, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@780478bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10603a1, org.springframework.security.web.session.SessionManagementFilter@8095ece, org.springframework.security.web.access.ExceptionTranslationFilter@7c389f47, org.springframework.security.web.access.intercept.AuthorizationFilter@ad287ec]
+2025-04-03 14:20:18 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@129908da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71f0a294, org.springframework.security.web.context.SecurityContextHolderFilter@3d9d761, org.springframework.security.web.header.HeaderWriterFilter@f989d46, org.springframework.web.filter.CorsFilter@3767f4e1, org.springframework.security.web.authentication.logout.LogoutFilter@2deeb33f, com.skilladmin.config.Jwtvalidator@61650e2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@268385a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56f5d68f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20f1913b, org.springframework.security.web.session.SessionManagementFilter@4c9aaf7f, org.springframework.security.web.access.ExceptionTranslationFilter@4ebbee76, org.springframework.security.web.access.intercept.AuthorizationFilter@19df5abf]
+2025-04-03 14:20:18 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-03 14:20:18 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:20:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/newskill'
+2025-04-03 14:20:18 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 50.534 seconds (process running for 10107.942)
+2025-04-03 14:20:18 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-03 14:20:21 INFO  com.skilladmin.DemoApplicationTests - Started DemoApplicationTests in 50.171 seconds (process running for 55.016)
+2025-04-03 14:20:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:20:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-03 14:20:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-03 14:20:42 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (2 additions, 0 deletions, 1 modification)
+2025-04-03 14:20:42 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:20:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:20:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-04-03 14:20:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-04-03 14:20:43 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:20:43 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:20:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1128 ms. Found 55 JPA repository interfaces.
+2025-04-03 14:20:49 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:20:49 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:20:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-04-03 14:20:49 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:20:49 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 14:20:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 14:20:49 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 14:20:49 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6472 ms
+2025-04-03 14:20:50 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:20:50 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:20:50 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:20:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-04-03 14:20:52 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6709e945
+2025-04-03 14:20:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-04-03 14:20:52 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:20:52 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:21:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:21:01 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 14:21:01 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 14:21:02 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 14:21:02 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 14:21:03 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 14:21:03 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 14:21:03 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 14:21:03 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 14:21:03 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 14:21:04 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 14:21:04 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 14:21:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:21:10 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 14:21:10 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 14:21:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:21:19 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@356ea5a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cff2cc, org.springframework.security.web.context.SecurityContextHolderFilter@499876c9, org.springframework.security.web.header.HeaderWriterFilter@343a4604, org.springframework.web.filter.CorsFilter@33d83176, org.springframework.security.web.authentication.logout.LogoutFilter@2c234680, com.skilladmin.config.Jwtvalidator@3befb619, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49acece7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fc099b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1855e933, org.springframework.security.web.session.SessionManagementFilter@4609f8ff, org.springframework.security.web.access.ExceptionTranslationFilter@4f09e7aa, org.springframework.security.web.access.intercept.AuthorizationFilter@29e058d6]
+2025-04-03 14:21:21 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-03 14:21:21 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:21:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/newskill'
+2025-04-03 14:21:22 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 39.116 seconds (process running for 10171.166)
+2025-04-03 14:21:22 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-03 14:22:16 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-03 14:22:16 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:22:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:22:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-04-03 14:22:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-04-03 14:22:19 INFO  com.skilladmin.DemoApplication - Starting DemoApplication using Java 22.0.2 with PID 4908 (C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin\target\classes started by pankaj in C:\Users\panka\OneDrive\Desktop\Skillpilot_new\SkillAdmin)
+2025-04-03 14:22:19 INFO  com.skilladmin.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-03 14:22:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03 14:22:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 449 ms. Found 55 JPA repository interfaces.
+2025-04-03 14:22:21 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-03 14:22:21 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-04-03 14:22:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-04-03 14:22:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:22:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-03 14:22:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-04-03 14:22:21 INFO  o.a.c.c.C.[.[localhost].[/newskill] - Initializing Spring embedded WebApplicationContext
+2025-04-03 14:22:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2269 ms
+2025-04-03 14:22:21 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03 14:22:21 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-03 14:22:21 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03 14:22:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2025-04-03 14:22:22 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c843c5e
+2025-04-03 14:22:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2025-04-03 14:22:22 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-03 14:22:22 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-03 14:22:29 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03 14:22:29 DEBUG org.hibernate.SQL - 
+    alter table advertisements_comp 
+       modify column description TEXT
+2025-04-03 14:22:29 DEBUG org.hibernate.SQL - 
+    alter table college_data4 
+       modify column logo mediumblob
+2025-04-03 14:22:30 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column about LONGTEXT
+2025-04-03 14:22:30 DEBUG org.hibernate.SQL - 
+    alter table company_data2 
+       modify column logo mediumblob
+2025-04-03 14:22:30 DEBUG org.hibernate.SQL - 
+    alter table company_drive 
+       modify column job_description text
+2025-04-03 14:22:30 DEBUG org.hibernate.SQL - 
+    alter table question 
+       modify column question_text TEXT
+2025-04-03 14:22:30 DEBUG org.hibernate.SQL - 
+    alter table rating 
+       modify column suggestion TEXT
+2025-04-03 14:22:31 DEBUG org.hibernate.SQL - 
+    alter table recruitment_details 
+       modify column job_description text
+2025-04-03 14:22:31 DEBUG org.hibernate.SQL - 
+    alter table student_data 
+       modify column photo mediumblob
+2025-04-03 14:22:31 DEBUG org.hibernate.SQL - 
+    alter table trainee_payment_details 
+       modify column pdf mediumblob
+2025-04-03 14:22:31 DEBUG org.hibernate.SQL - 
+    alter table user 
+       modify column signature mediumblob
+2025-04-03 14:22:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 14:22:35 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-03 14:22:35 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-04-03 14:22:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03 14:22:39 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4fb9601f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@604aaa63, org.springframework.security.web.context.SecurityContextHolderFilter@739ce7d7, org.springframework.security.web.header.HeaderWriterFilter@1c0824e0, org.springframework.web.filter.CorsFilter@6cbd0fc7, org.springframework.security.web.authentication.logout.LogoutFilter@ea43f14, com.skilladmin.config.Jwtvalidator@24f2d763, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c91ff50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31e3f906, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61356a28, org.springframework.security.web.session.SessionManagementFilter@5cfef490, org.springframework.security.web.access.ExceptionTranslationFilter@13319460, org.springframework.security.web.access.intercept.AuthorizationFilter@4329d585]
+2025-04-03 14:22:39 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-03 14:22:39 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-04-03 14:22:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/newskill'
+2025-04-03 14:22:40 INFO  com.skilladmin.DemoApplication - Started DemoApplication in 20.955 seconds (process running for 10249.057)
+2025-04-03 14:22:40 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-03 15:19:23 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=25m29s484ms654µs400ns).
+2025-04-03 15:26:52 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=3m58s351ms682µs800ns).
+2025-04-03 15:30:12 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=3m22s446ms843µs300ns).
+2025-04-03 16:50:10 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=4m55s888ms896µs600ns).
+2025-04-03 17:47:15 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=9m4s77ms124µs300ns).
+2025-04-03 18:01:16 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=3m29s770ms284µs).
+2025-04-03 18:03:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03 18:03:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-04-03 18:03:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
