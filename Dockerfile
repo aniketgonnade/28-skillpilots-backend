@@ -14,3 +14,4 @@ EXPOSE 8081
 CMD ["java", "-jar", "app.jar", "--server.port=8081"]
 
 RUN echo "Hello my name is Aniket"
+RUN echo "Hello my name is Aniket"
